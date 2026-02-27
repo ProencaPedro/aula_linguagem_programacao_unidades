@@ -94,3 +94,77 @@ Digite o valor de x: 3
 O resultado de y para x = 3.0 é 20.5.
 
 
+
+#ESTRUTURAS LÓGICAS, CONDICIONAIS E DE REPETIÇÃO EM PYTHON
+
+#Em Python tudo é objeto, então uma variável também é um objeto.
+
+#Operados relacionais
+a < b #O valor de a é menor que b?
+a <= b #O valor de a é igual OU menos que b?
+a > b #O valor de a é maior que b?
+a >= b #O valor de a é maior OU igual que b?
+a == b #O valor de a é igual ao de b?
+a != b #O valor de a é diferente do valor de b? 
+a is b #O valor de a é idêntico ao valor de b?
+a is not b #O valor de a não é idêntico ao valor de b?
+
+#Estruturas Condicionais em Python: IF, ELIF, ELSE
+#O comando if..else.. significam se..senão.. e são usados para contruir as estruturas condicionais.
+
+#Python possui uma sintaxe especial para a construção das estruturas condicionais.
+
+#Estrutura  condicional simples
+a = 5
+b = 10
+
+if a < b :
+ print("a é menor do que b")
+ r = a + b 
+ print(r)
+
+#Estrutura condicional composta:
+a = 10
+b = 5
+
+if a < b:
+ print("a é menor do que b")
+ r = a + b
+ print(r)
+else:
+ print("a é maior do que b")
+ r = a - b
+ print(r)
+
+#Para construir uma estrutura encadeada, devemos usar o comando "elif", que é uma abreviação de else if. 
+codigo_compra = 5111
+
+if codigo_compra == 5222:
+ print("Compra à vista.")
+
+elif codigo_compra == 5333:
+ print("Compra à prazo no boleto.")
+
+elif codigo_compra == 5444:
+ print("Código não cadastrado")
+
+else:
+ print("Código não cadastrado")
+
+#Estrutura Lógicas em python : AND, OR , NOT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
