@@ -161,7 +161,58 @@ elif codigo_compra == 5444:
 else:
  print("Código não cadastrado")
 
-#Estrutura Lógicas em python : AND, OR , NOT
+'''
+Estrutura Lógicas em python : AND, OR , NOT
+ Além dos operadores reacionais, podem ser usador os operadores Booleanos para construir estruturas de decisões mais complexas.
+ 
+ Operador and: Esse operador faz a operação lógica E, ou seja, dada a expressão (a and b), o resultado será True, 
+ somente quando os dois argumentos forem verdadeiros.
+
+ Operador or: Esse operador faz a operação lógica OU, ou seja, dada a expressão (a or b), o resultado será True,
+ quando pelo menos um dos argumentos for verdadeiro.
+
+ Operador not: Esse operador faz a operação lógica NOT, ou seja, dada a expressão (not a), ele irá inverter o valor do argumento.
+ Portanto, se o argumento for verdadeiro, a operação o transformará em falso e vice-versa.
+'''
+#EX.:
+qtde_faltas = int(input("Digite a quantidade de faltas: "))
+media_final = float(input("Digite a média final: "))
+
+if qtde_faltas <= 5 and media_final >= 7:
+    print("Aluno aprovado!")
+else:
+    print("Aluno reprovado!")
+ 
+#Exemplo not:
+
+A = 15
+B = 9
+C = 9
+
+print(B == C or A < B and A < C)
+print((B == C or A < B) and A < C)
+True
+False 
+'''
+ Assim como as operações matemáticas possuem ordem de precedência, as operações booleanas também têm. Essa prioridade obedece à seguinte ordem: not primeiro,
+ and em seguida e or por último
+ '''
+'''
+Estruturas de Repetição em Python: while e for
+Estruturas que precisam executar várias vezes o mesmo trecho de código, while (enquanto) ou for (para).
+While deve ser ultilizado para construir e controlar a estrutura decisão, sempre que o número de repetições não seja conhecido.
+'''
+
+numero = 1
+while numero != 0:
+ numero = int(input("Digite um número: "))
+ if numero % 2 == 0:
+  print("Número par!")
+ else:
+  print("Numero ímpar!")
+
+
+
 
 
 
