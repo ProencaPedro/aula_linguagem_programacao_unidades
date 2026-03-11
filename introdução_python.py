@@ -211,11 +211,83 @@ while numero != 0:
  else:
   print("Numero ímpar!")
 
+'''
+Outro comando utilizado para construir as estrututuras de repetição é o for, em Python em vez de sempre dar o usuário a capacidade de definir a etapa de
+iteração e a condição de parada (como C), a instrução Python for itera sobre os itens de qualquer sequência, por exemplo, iterar sobre os caracteres
+de uma palavra, pois uma palavra é um tipo de sequência.
+Exemplo:
+'''
+nome = "Pedro"
+for c in nome:
+ print(c)
+#Função enumerate()
+nome = "Pedro"
+for i, c in enumerate(nome):
+ print(f"Posição = {i}, valor = {c}")
 
+'''
+Controle de Repetição com range, break e continue
+Para criar uma sequência numérica de iteração em Python, podemos usar a função range():
+'''
+for x in range(5):
+ print(x)
 
+'''
+No comando, "x" é a variável de controle, ou seja, a cada iteração do laço, seu valor é alterado, já a função range() foi utilizada para criar um "iterable" 
+numérico (objeto iterável) para que as repetições acontecesse. 
+A função range() pode ser usada de três formas distintas:
+Método 1: passando um único argumento que representa a quantidade de vezes que o laço deve repetir;
+Método 2: passando dois argumentos, um que representa o início das repetições e outro o limite superior(NÃO INCLUÍDO) do valor da variável de controle;
+Método 3: passando três argumentos, um que representa o início das repetições; outro, o limite superior (NÃO INCLUÍDO) do valor da variável de controle e
+um que representa o incrememnto.
 
+'''
+#METODO 1
+for i in range(10):
+ print(i)
+#METODO 2
+for i in range(0, 5):
+ print(i)
+#METODO 3
+for i in range(0,20,2):
+ print(i)
 
+'''
+Além de controlar as iterações com o tamanho da sequência, outra forma de influenciar no fluxo é por meio dos comandos "break" e "continue".
+break: para execução de uma estrutura de repetição;
+continue: conseguimos "pular" algumas execuções, dependendo de uma condição;
 
+'''
+#EXEMPLO DE BREAK
+disciplina = "Linguagem de programação"
+for c in disciplina:
+ if c == 'a':
+  break
+ else:
+  print(c)
+
+#EXEMPLO DE CONTINUE
+disciplina = "Linguagem de programação"
+for c in disciplina:
+ if c == 'a':
+  continue
+ else:
+  print(c)
+
+'''
+Criando uma solução que procura pelas vogais "a", "e" em um texto (somente minúsculas).
+texto = A inserção de comentários no código do programa é uma prática normal. Em função disso, toda linguagem de programação tem alguma maneira de permitir
+que comentários sejam inseridos nos programas. O objetivo é adicionar descrições em partes do código, seja para documentá-lo ou para adicionar uma descrição 
+do algoritmo implementado (BANIN, 2018, p. 45).
+'''
+texto = '''A inserção de comentários no código do programa é uma prática normal. Em função disso, toda linguagem de programação tem alguma maneira de permitir
+que comentários sejam inseridos nos programas. O objetivo é adicionar descrições em partes do código, seja para documentá-lo ou para adicionar uma descrição 
+do algoritmo implementado (BANIN, 2018, p. 45)."
+'''
+for i, c in enumerate(texto):
+ if c == 'a' or c == 'e':
+  print(f"Vogal '{c} encontrada, na prosição {e}")
+else
 
 
 
