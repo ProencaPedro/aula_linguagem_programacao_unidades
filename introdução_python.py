@@ -287,7 +287,8 @@ do algoritmo implementado (BANIN, 2018, p. 45)."
 for i, c in enumerate(texto):
  if c == 'a' or c == 'e':
   print(f"Vogal '{c} encontrada, na prosição {e}")
-else
+else:
+ continue
 
 
 
