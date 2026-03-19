@@ -34,4 +34,41 @@ if i > 16:
   print("Parabéns! Você está apto a votar!")
 else: 
   print("Que pena. Você não está apto a votar.")
-  
+
+#3:
+for i in range(1, 11):
+  print(i)
+
+#4:
+contador = 0
+while contador < 11:
+  print(contador)
+  contador += 1
+
+#5: 
+numero = int(input("Insira um número, para ver sua tabuada: "))
+print(f"Tabuada do {numero}:")
+for i in range(1,11):
+  resultado = numero * i
+  print(f"{numero} x {i} = {resultado}")
+
+#6:
+print("--Descubra a Tabuada de qualquer numero! (Digite 0 para sair)--")
+
+print("\n")
+
+while True:
+  numero = int(input("Insira um número, para ver sua tabuada:"))
+
+  if numero == 0:
+    print("Programa encerrado... Até logo!")
+    break
+
+  print(f"Tabuada do {numero}:")
+  for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
+
+
+
+
+
