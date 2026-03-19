@@ -68,6 +68,45 @@ while True:
   for i in range(1, 11):
     print(f"{numero} x {i} = {numero * i}")
 
+#7:
+contador_pares= 0
+for n in range(1, 51):
+  if n % 2 == 0:
+    contador_pares = contador_pares + 1
+
+print(f"Existem {contador_pares} números pares entre 1 a 50.")
+
+#8:
+contador_multiplo_3 = 0
+for n in range(1, 31):
+  if n % 3 == 0:
+    contador_multiplo_3 = contador_multiplo_3 + 1
+
+print(f"Existem {contador_multiplo_3} número multiplos por 3 de 1 a 30. ")
+
+#9:
+while True:
+  n = float(input("Digite apenas números postivios: "))
+  if n >= 0:
+    print(f"Número {n} aceito com sucesso!")
+    break
+
+  print("Error....Você digitou um número negativo. Tente novamnete.")
+
+print("Fim do programa.")
+
+#10:
+t = input("Digite uma palavra ou frase: ")
+t_invert = ""
+
+for letra in t:
+  t_invert = letra + t_invert
+
+print(f"O inverso de {t} é: {t_invert}")
+
+
+
+
 
 
 
